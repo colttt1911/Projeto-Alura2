@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de Conteúdo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site de Assinatura de Conteúdo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Descubra Conteúdo Exclusivo</h2>
+            <p>Assine agora e tenha acesso a artigos, vídeos e muito mais!</p>
+        </section>
+
+        <section class="planos">
+            <h2>Nossos Planos</h2>
+            <div class="plano">
+                <h3>Plano Básico</h3>
+                <p>Acesso a artigos e conteúdos básicos.</p>
+                <p class="preco">R$19,99/mês</p>
+                <button class="modifica">Assinar</button>
+            </div>
+            <div class="plano">
+                <h3>Plano Premium</h3>
+                <p>Acesso completo a todo o conteúdo, incluindo vídeos exclusivos.</p>
+                <p class="preco">R$39,99/mês</p>
+                <button class="modifica">Assinar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Assinatura de Conteúdo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plano {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+}
+
+.preco {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin: 0.5rem 0;
+}
+
+.modifica {
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.modifica:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
